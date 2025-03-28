@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="icon" href="imgs/00b2de40.gif">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+     <form class="jobAppForm"onsubmit="sendData(event)">
+        <h1 class="header-form">Job application form</h1>
+        <span class="input-names">Name: </span><input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <span class="input-names">Surname: </span><input type="text" name="surname" id="surname" placeholder="Enter your surname" required>
+    <div class="lower-half">
+        <div class="radios">  
+            <input type="radio" name="radio" id="radio1" value="option1">M
+            <input type="radio" name="radio" id="radio2" value="option2">F<br>
+        </div>
+        <div class="buttons"> 
+            <select name="field" id="field"></select>
+        <div class="min-max-salary">
+            <div>
+                <label for="min-salary">Minimum Salary:</label>
+                <input type="number" placeholder="minimum salary" id="min-salary" name="min-salary" required>
+            </div>
+            <div><label for="max-salary">Maximum Salary:</label>
+                <input type="number" placeholder="maximum salary" id="max-salary" name="max-salary" required>
+            </div>
+        </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button> 
+        </div>
+        
+    </div>
+      
+       
+    </form>  
+    <div id="modal" style="display: none;">
+        <div class="loader"></div>
+        <p>Loading results...</p>
+    </div>
+
+    <section id="announcements">
+        <h1 class="header-announcements">JOBS</h1>
+        <h3 class="announcements-status"></h3>
+        <div class="announcement-cards"></div>
+    </section>
+
+
+    
+    <script type ="module" src="script.js"></script>
+</body>
+</html>
