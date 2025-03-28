@@ -177,12 +177,24 @@
         display: flex;
         flex-wrap: wrap;
         gap:30px;   
+        margin-top:30px;
     }
   
 }
+#announcements .announcement-card:hover{
+    background-color: #f77495;
+    transition: 0.3s;
+    color: #ffbccc;
+    border: 1px solid #ed5580;
+    box-shadow: #fde8e5 0px 0px 20px 0px;
+    transform: scale(1.03);
+}
 
+#announcements-status {
+    margin-bottom: 30px;
+}
 #announcements{
-    display: none; 
+    /*display: none; */
     transition: 0.3s;
 }
 
